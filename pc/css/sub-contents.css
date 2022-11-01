@@ -1,5 +1,13 @@
+#sub-contents-wrap .sns-list {
+  margin-top: 100px;
+  display: flex;
+}
+#sub-contents-wrap .sns-list li {
+  margin-right: 20px;
+}
+
 #sub-contents-title {
-  padding-top: 180px;
+  padding: 180px 0 100px;
   background-color: #d1beab;
 }
 #sub-contents-title h2 {
@@ -57,4 +65,80 @@
 }
 .introduce .diagram > ul > li .contents .list li {
   padding: 10px 0;
+}
+.introduce .philosophy {
+  margin-top: 150px;
+  line-height: 1.5;
+  text-align: center;
+}
+.introduce .philosophy p {
+  margin-top: 30px;
+}
+.introduce .philosophy strong {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.foundation .list li {
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 150px 0;
+  background-repeat: no-repeat;
+  background-size: 30vw;
+  background-blend-mode: multiply;
+}
+.foundation .list li:nth-child(1) {
+  background-image: url("../images/sub-contents/founder-01.png");
+}
+.foundation .list li:nth-child(2) {
+  background-image: url("../images/sub-contents/founder-02.png");
+}
+.foundation .list li:nth-child(3) {
+  background-image: url("../images/sub-contents/founder-03.png");
+}
+.foundation .list li:nth-child(odd) {
+  background-color: #f0f4f6;
+  background-position: 80% 100%;
+}
+.foundation .list li:nth-child(even) {
+  background-position: 20% 100%;
+}
+.foundation .list li:nth-child(even) .container {
+  display: flex;
+  justify-content: flex-end;
+}
+.foundation .list li .title-box .name {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.foundation .list li .title-box .position {
+  color: #dd3156;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.foundation .list li .message {
+  margin-top: 120px;
+}
+.foundation .list li .message blockquote {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  margin-bottom: 50px;
+}
+.foundation .list li .message blockquote:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: url("../images/sub-contents/icon-quote.svg") no-repeat;
+  position: absolute;
+  left: -20px;
+  top: -10px;
+}
+.foundation .list li .message p {
+  color: #999;
+  line-height: 1.5;
+  font-size: 20px;
 }
