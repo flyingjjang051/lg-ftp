@@ -1,0 +1,15 @@
+@mixin ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+//f(x,y) vendor prefix
+
+@mixin multiElilipsis($line: 2, $lineHeight: 1.5) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  height: $lineHeight * $line * 1em; //3em
+  line-height: $lineHeight;
+}
