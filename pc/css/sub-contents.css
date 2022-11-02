@@ -1,3 +1,62 @@
+.tab {
+  margin-top: 100px;
+}
+.tab.tab02 .menu li {
+  flex-basis: 100%/2;
+}
+.tab.tab03 .menu li {
+  flex-basis: 100%/3;
+}
+.tab.tab04 .menu li {
+  flex-basis: 100%/4;
+}
+.tab.tab05 .menu li {
+  flex-basis: 100%/5;
+}
+.tab.tab06 .menu li {
+  flex-basis: 100%/6;
+}
+.tab.tab07 .menu li {
+  flex-basis: 100%/7;
+}
+.tab.tab08 .menu li {
+  flex-basis: 100%/8;
+}
+.tab.tab09 .menu li {
+  flex-basis: 100%/9;
+}
+.tab .menu {
+  display: flex;
+  position: relative;
+}
+.tab .menu:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #dd3156;
+  z-index: -1;
+}
+.tab .menu li {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  flex-basis: 20%;
+  font-size: 24px;
+}
+.tab .menu li.on {
+  border: 2px solid #dd3156;
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+  background-color: #fff;
+  color: #dd3156;
+}
+
 #sub-contents-wrap .sns-list {
   margin-top: 100px;
   display: flex;
