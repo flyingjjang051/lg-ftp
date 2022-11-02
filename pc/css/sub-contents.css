@@ -267,3 +267,45 @@
   background-color: #f00;
   margin-top: 100px;
 }
+.location .customoverlay {
+  transform: translateY(-80px);
+}
+.location .customoverlay a {
+  display: flex;
+  color: #111;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #dd3156;
+}
+.location .customoverlay a:after {
+  content: "\f054";
+  font-family: "FontAwesome";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  color: #fff;
+}
+.location .customoverlay a span {
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #fff;
+}
+
+.overlay {
+  transform: translateY(-80px);
+  background-color: #111;
+  border-radius: 10px;
+  padding: 15px;
+}
+.overlay li {
+  padding: 10px 20px;
+  background-color: #fff;
+  margin-bottom: 2px;
+  font-size: 14px;
+  font-weight: 500;
+}

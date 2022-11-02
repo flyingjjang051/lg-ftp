@@ -1,3 +1,8 @@
+const navOption = {
+  nextEl: "#main-visual .btn-next",
+  prevEl: "#main-visual .btn-prev",
+};
+
 const mainSlider = new Swiper("#main-visual", {
   effect: "fade",
   loop: true,
@@ -5,10 +10,7 @@ const mainSlider = new Swiper("#main-visual", {
   autoplay: {
     delay: 5000,
   },
-  navigation: {
-    nextEl: "#main-visual .btn-next",
-    prevEl: "#main-visual .btn-prev",
-  },
+  navigation: navOption,
   pagination: {
     el: ".pagination",
     type: "bullets",
