@@ -261,3 +261,9 @@
   line-height: 1.5;
   font-size: 20px;
 }
+
+.location .map {
+  height: 600px;
+  background-color: #f00;
+  margin-top: 100px;
+}
