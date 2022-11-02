@@ -48,12 +48,74 @@
       box-sizing: border-box;
       flex-basis: 20%; // 자식의 넓이 지정하기....
       font-size: $h3;
+      cursor: pointer;
       &.on {
         border: 2px solid $main-color;
         border-bottom: none;
         border-radius: 20px 20px 0 0;
         background-color: #fff;
         color: $main-color;
+      }
+    }
+  }
+  .contents {
+    margin: 80px 0;
+    > li {
+      display: none;
+      position: relative;
+      padding: 50px 0;
+      &:before {
+        content: "";
+        display: block;
+        width: 1px;
+        top: 0;
+        height: 100%;
+        position: absolute;
+        left: 169px;
+        background-color: $main-color;
+      }
+      &.on {
+        display: block;
+      }
+      .year {
+        li {
+          display: flex;
+          margin-bottom: 50px;
+          font-size: $h4;
+          &:nth-last-child(1) {
+            margin-bottom: 0;
+          }
+          p {
+            padding-left: 100px;
+            margin-left: 50px;
+            position: relative;
+            display: flex;
+            flex-grow: 1;
+            &:hover:before {
+              background-color: $main-color;
+            }
+            &:before {
+              content: "";
+              display: block;
+              width: 12px;
+              height: 12px;
+              border: 3px solid $main-color;
+              border-radius: 100px;
+              position: absolute;
+              left: 0;
+              transform: translateX(-50%);
+              background-color: #fff;
+              transition: all 0.25s ease;
+            }
+          }
+          .date {
+            flex-basis: 120px;
+            color: $main-color;
+          }
+          .current {
+            margin-left: auto;
+          }
+        }
       }
     }
   }

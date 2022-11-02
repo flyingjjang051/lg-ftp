@@ -48,6 +48,7 @@
   box-sizing: border-box;
   flex-basis: 20%;
   font-size: 24px;
+  cursor: pointer;
 }
 .tab .menu li.on {
   border: 2px solid #dd3156;
@@ -55,6 +56,65 @@
   border-radius: 20px 20px 0 0;
   background-color: #fff;
   color: #dd3156;
+}
+.tab .contents {
+  margin: 80px 0;
+}
+.tab .contents > li {
+  display: none;
+  position: relative;
+  padding: 50px 0;
+}
+.tab .contents > li:before {
+  content: "";
+  display: block;
+  width: 1px;
+  top: 0;
+  height: 100%;
+  position: absolute;
+  left: 169px;
+  background-color: #dd3156;
+}
+.tab .contents > li.on {
+  display: block;
+}
+.tab .contents > li .year li {
+  display: flex;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+.tab .contents > li .year li:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.tab .contents > li .year li p {
+  padding-left: 100px;
+  margin-left: 50px;
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+}
+.tab .contents > li .year li p:hover:before {
+  background-color: #dd3156;
+}
+.tab .contents > li .year li p:before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #dd3156;
+  border-radius: 100px;
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+  background-color: #fff;
+  transition: all 0.25s ease;
+}
+.tab .contents > li .year li .date {
+  flex-basis: 120px;
+  color: #dd3156;
+}
+.tab .contents > li .year li .current {
+  margin-left: auto;
 }
 
 #sub-contents-wrap .sns-list {
